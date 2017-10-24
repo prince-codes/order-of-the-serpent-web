@@ -1,0 +1,29 @@
+
+USAGE: perforations [-n number] [-s size] [-p position] [-b border] infile outfile
+USAGE: perforations [-h or -help]
+
+-n ... number ..... number of perforations; integer>0; default=8
+-s ... size ....... size of perforations as percentage of smaller image 
+................... dimension; 0<float<=15; default=6
+-p ... position ... position of perforations; choices are: TB (for top/bottom
+................... edges or LR (for left/right edges); default is along the 
+................... edges corresponding to the larger image dimension
+-b ... border ..... border type; choices are: black, burned, faded or none;
+................... default=black
+
+PURPOSE: To apply film-like perforations to two opposite edges of an image.
+
+DESCRIPTION: PERFORATIONS applies film-like perforations to two opposite edges of an image. Various border types may be selected.
+
+ARGUMENTS:
+
+-n number ... NUMBER of perforations. Values are integers>0. The default=8.
+
+-s size ... SIZE of perforations as percentage of smaller image dimension. Values are 0<floats<=15. The default=6.
+
+-p position POSITION of perforations. The choices are: TB (for top/bottom edges or LR (for left/right edges). The default is along the edges corresponding to the larger image dimension.
+
+-b border ... BORDER type. The choices are: black (b), aged (a), faded (f) or none (n). The default=black. Note: border=faded fades to transparent.
+
+Requirements: IM 6.5.9.3 or higher due to the use of 1D morphology blur for border=aged or faded.
+

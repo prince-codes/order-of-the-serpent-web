@@ -1,0 +1,226 @@
+/* copyright (c) orderoftheserpent.org */
+
+/* colors used */
+/* 75c */
+/* 84f */
+/* 96f */
+/* a9f */
+
+/* basics */
+body
+{
+  margin: 0;
+  padding: 0;
+  color: #aaa;
+  background: #000;
+  font: 100%/150% "Lucida Sans Unicode", "Verdana", "Arial", "Helvetica",
+  sans-serif;
+  font-weight: 500;
+}
+
+h1
+{
+  margin: 0;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+h2
+{
+  color: #84f;
+  margin: 0 0 0.2em;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+h3
+{
+  color: #84f;
+  margin: 0 0 0.2em;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+h4
+{
+  color: #84f;
+  margin: 0 0 0.6em;
+  font-size: 1.1em;
+  font-style: italic;
+  font-weight: 500;
+}
+
+p
+{
+  margin: 0 0 1.5em;
+  font-size: 1.0em;
+}
+
+img
+{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+hr { border: 0; height: 1px; background: #666; background: linear-gradient(to right, #222, #666, #222); }
+
+/* float some images left */
+.image_div img { float: left; }
+
+a { color: #84f; }
+a:link { color: #84f; }
+a:visited { color: #84f; }
+a:focus { color: #84f; }
+a:hover { color: #96f; }
+a:active { color: #84f; }
+
+/* logo */
+.header { }
+.header hr { border: 0; }
+
+/* main menu */
+.nav-bar { color: #fff; background-color: #000; }
+.nav { margin: 0; padding: 0; list-style: none; }
+
+.nav li { display: inline; margin: 0; }
+
+.nav a
+{
+  display: block;
+  margin: 0.3em 1.0em;
+  padding: 0.3em 1.0em;
+  color: #ddd;
+  background: #213;
+  text-decoration: none;
+  text-shadow: 0 0 0.1em #a9f, 0 0 1.0em #84f, 0 0 1.0em #84f, 0 0 1.0em #84f, 0 0 1.0em #84f, 0 0 1.0em #84f;
+  font: 1.2em helvetica,arial,sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  border: 1px solid #75c;
+  border-radius: 4px;
+}
+
+.nav a:link { color: #000; }
+.nav a:visited { color: #000; }
+.nav a:focus { color: #000; }
+.nav a:hover { color: #a9f; text-shadow: 0 0 0.1em #000, 0 0 1.5em #84f, 0 0 1.5em #84f, 0 0 1.5em #84f; background: #281848; }
+.nav a:active { color: #000; }
+
+/* alignment containers */
+.align_left { padding: 1em; text-align: left; }
+.align_center { margin-top: 1em; margin-bottom: 1em; text-align: center; }
+
+/* index.html */
+.index_text
+{
+  padding: 0.5em;
+}
+
+.index_text p
+{
+  color: #a9f;
+  font: 1.4em "Times New Roman", Times, serif;
+  font-style: italic;
+  margin: 0;
+}
+
+/* news.html */
+.news_format { margin-bottom: 1em; padding: 0.5em; }
+.news_format hr { border: 0; height: 1px; background: #444; background: linear-gradient(to right, #222, #444, #222); }
+.news_sidebar { margin-bottom: 1em; padding: 0.5em; font-size: 80%; }
+.news_text { margin-left: 104px; text-align: left; }
+.news_text hr { border: 0; clear: left; margin-bottom: 0.5em; background: none; }
+
+/* star.html */
+.star_format { margin-bottom: 1em; padding: 0.5em; }
+.star_format hr { border: 0; height: 1px; background: #444; background: linear-gradient(to right, #222, #444, #222); }
+.star_text { margin-left: 136px; text-align: left; font-size: 80%; }
+.star_text p { text-align: left; margin-bottom: 0 }
+.star_text hr { border: 0; clear: left; margin-bottom: 2.0em; background: none; }
+
+/* library.html */
+.lib_dropdown
+{
+  position: relative;
+  display: inline-block;
+  padding-top: 8px;
+  padding-bottom: 0px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin: 4px;
+  font-size: 1.4em;
+  background: #000;
+  border: 1px solid #75c;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.lib_dropdown:hover h3
+{
+  color: #96f;
+}
+
+.lib_dropdown_content
+{
+  display: none;
+  position: absolute;
+  background-color: #000;
+  min-width: auto;
+  z-index: 1;
+  text-align: left;
+  font-size: 1.0em;
+  white-space: nowrap;
+  padding: 4px;
+}
+
+.lib_dropdown_content a
+{
+  color: #aaa;
+  text-decoration: none;
+}
+
+.lib_dropdown_content a:hover
+{
+  color: #75c;
+  text-decoration: none;
+}
+
+.lib_dropdown:hover .lib_dropdown_content
+{
+  display: block;
+  font-size: .7em;
+  background: #000;
+  border: 1px solid #75c;
+  border-radius: 4px;
+}
+
+/* copyright info */
+.footer
+{
+  clear: both;
+  margin-top: 2em;
+  padding: 1em;
+  color: #75c;
+  background-color: #000;
+  font-style: italic;
+  text-align: center;
+}
+
+.footer hr { border: 0; height: 1px; background: #666; background: linear-gradient(to right, #222, #666, #222); }
+
+
+/* replace mobile-friendly elements with those
+   more suited to desktop if the window is wide enough */
+@media (min-width: 700px)
+{
+  .nav li { display: inline; margin: 0 1em 0 0; }
+  .nav a { display: inline; margin: 0 0.2em; padding: 0; background: #000; border: 0; }
+  .nav a:hover { background: #000 }
+  .align_left { overflow: hidden; padding: 2em 0 1em; }
+  .news_format { float: left; width: 55%; margin-left: 5%; }
+  .news_sidebar { float: left; width: 25%; margin-left: 5%; }
+  .star_format { float: left; margin-left: 5%; }
+  .header hr { border: 0; height: 1px; background: #666; background: linear-gradient(to right, #222, #666, #222); }
+  .footer { padding: 1em 5%; }
+}
+
