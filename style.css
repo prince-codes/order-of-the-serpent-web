@@ -127,7 +127,7 @@ a:active { color: #84f; }
 /* news.html */
 .news_format { margin-bottom: 1em; padding: 0.5em; }
 .news_format hr { border: 0; height: 1px; background: #444; background: linear-gradient(to right, #222, #444, #222); }
-.news_sidebar { margin-bottom: 1em; padding: 0.5em; font-size: 80%; line-height: 130% }
+.news_sidebar { margin-bottom: 1em; padding: 0.5em; font-size: 80%; }
 .news_text { margin-left: 104px; text-align: left; }
 .news_text hr { border: 0; clear: left; margin-bottom: 0.5em; background: none; }
 
@@ -142,7 +142,7 @@ a:active { color: #84f; }
 .lib_dropdown
 {
   position: relative;
-  display: inline-block;
+  display: none;
   padding-top: 8px;
   padding-bottom: 0px;
   padding-left: 8px;
@@ -153,6 +153,10 @@ a:active { color: #84f; }
   border: 1px solid #75c;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.accordion_content {
+  display: none;
 }
 
 .lib_dropdown:hover h3
@@ -171,6 +175,20 @@ a:active { color: #84f; }
   font-size: 1.0em;
   white-space: nowrap;
   padding: 4px;
+}
+
+.accordion_header {
+  position: relative;
+  padding-top: 8px;
+  padding-bottom: 0px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin: 4px;
+  font-size: 1.4em;
+  background: #000;
+  border: 1px solid #75c;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .lib_dropdown_content a
@@ -217,10 +235,19 @@ a:active { color: #84f; }
   .nav a { display: inline; margin: 0 0.2em; padding: 0; background: #000; border: 0; }
   .nav a:hover { background: #000 }
   .align_left { overflow: hidden; padding: 2em 0 1em; }
-  .news_format { float: left; width: 60%; margin-left: 5%; }
-  .news_sidebar { margin-top: -85%; float: left; width: 20%; margin-left: 5%; }
+  .news_format { float: left; width: 55%; margin-left: 5%; }
+  .news_sidebar { float: left; width: 25%; margin-left: 5%; }
   .star_format { float: left; margin-left: 5%; }
   .header hr { border: 0; height: 1px; background: #666; background: linear-gradient(to right, #222, #666, #222); }
   .footer { padding: 1em 5%; }
-}
+  .lib_dropdown {
+    display: inline-block;
+  }
+  .accordion_header {
+    display: none;
+  }
 
+  .accordion_content {
+    display: block;
+  }
+}
