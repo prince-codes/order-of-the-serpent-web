@@ -403,7 +403,7 @@ a:active
   .news_format
   {
     float: left;
-    width: 55%;
+    /* width: 55%; */
     margin-left: 5%;
   }
 
