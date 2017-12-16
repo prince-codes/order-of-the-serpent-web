@@ -1,4 +1,99 @@
 /* copyright (c) orderoftheserpent.org */
+@import sass
+@import compass
+
+
+// n is number of stars required
+@function multiple-box-shadow ($n)
+  $value: '#{random(2000)}px #{random(2000)}px #FFF'
+  @for $i from 2 through $n
+    $value: '#{$value} , #{random(2000)}px #{random(2000)}px #FFF'
+
+  @return unquote($value)
+
+$shadows-small:  multiple-box-shadow(700)
+$shadows-medium: multiple-box-shadow(200)
+$shadows-big:    multiple-box-shadow(100)
+
+html
+  height: 100%
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%)
+  overflow: hidden
+
+#stars
+  width: 1px
+  height: 1px
+  background: transparent
+  box-shadow: $shadows-small
+  animation			: animStar 50s linear infinite
+
+  &:after
+    content: " "
+    position: absolute
+    top: 2000px
+    width: 1px
+    height: 1px
+    background: transparent
+    box-shadow: $shadows-small
+
+#stars2
+  width: 2px
+  height: 2px
+  background: transparent
+  box-shadow: $shadows-medium
+  animation			: animStar 100s linear infinite
+
+  &:after
+    content: " "
+    position: absolute
+    top: 2000px
+    width: 2px
+    height: 2px
+    background: transparent
+    box-shadow: $shadows-medium
+
+#stars3
+  width: 3px
+  height: 3px
+  background: transparent
+  box-shadow: $shadows-big
+  animation			: animStar 150s linear infinite
+
+  &:after
+    content: " "
+    position: absolute
+    top: 2000px
+    width: 3px
+    height: 3px
+    background: transparent
+    box-shadow: $shadows-big
+
+#title
+  position: absolute
+  top: 50%
+  left: 0
+  right: 0
+
+  color: #FFF
+  text-align: center
+  font-family: 'lato',sans-serif
+  font-weight: 300
+  font-size: 50px
+  letter-spacing: 10px
+
+  margin-top: -60px
+  padding-left: 10px
+
+  span
+    background: -webkit-linear-gradient(white, #38495a)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+
+@keyframes animStar
+  from
+    transform: translateY(0px)
+  to
+    transform: translateY(-2000px)
 
 /* colors used */
 /* 75c */
@@ -7,7 +102,7 @@
 /* a9f */
 
 /* basics */
-body
+/* body
 {
   margin: 0;
   padding: 0;
@@ -70,7 +165,7 @@ hr
 }
 
 /* float some images left */
-.image_div img
+/* .image_div img
 {
   float: left;
 }
@@ -105,13 +200,13 @@ a:active
 }
 
 /* logo */
-.header hr
+/*.header hr
 {
   border: 0;
 }
 
 /* main menu */
-.nav-bar
+/*.nav-bar
 {
   color: #fff;
   background-color: #000;
@@ -173,7 +268,7 @@ a:active
 }
 
 /* alignment containers */
-.align_left
+/*.align_left
 {
   padding: 1em;
   text-align: left;
@@ -187,7 +282,7 @@ a:active
 }
 
 /* index.html */
-.index_text
+/*.index_text
 {
   padding: 0.5em;
 }
@@ -201,7 +296,7 @@ a:active
 }
 
 /* news.html */
-.news_format
+/*.news_format
 {
   margin-bottom: 1em;
   padding: 0.5em;
@@ -237,7 +332,7 @@ a:active
 }
 
 /* star.html */
-.star_format
+/*.star_format
 {
   margin-bottom: 1em;
   padding: 0.5em;
@@ -273,7 +368,7 @@ a:active
 }
 
 /* library.html */
-.lib_dropdown
+/*.lib_dropdown
 {
   position: relative;
   display: none;
@@ -290,7 +385,7 @@ a:active
 }
 
 /* library.html accordion feature */
-.accordion_content
+/*.accordion_content
 {
   display: none;
 }
@@ -350,7 +445,7 @@ a:active
 }
 
 /* copyright info */
-.footer
+/*.footer
 {
   clear: both;
   margin-top: 2em;
@@ -372,7 +467,7 @@ a:active
 
 /* replace mobile-friendly elements with those
    more suited to desktop if the window is wide enough */
-@media (min-width: 700px)
+/*@media (min-width: 700px)
 {
   .nav li
   {
@@ -403,8 +498,8 @@ a:active
   .news_format
   {
     float: left;
-    width: 55%;
-    margin-left: 5%;
+    /* width: 55%; */
+  /*  margin-left: 5%;
   }
 
   .news_sidebar
