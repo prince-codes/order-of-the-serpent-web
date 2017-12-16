@@ -1,12 +1,12 @@
 # Order of the Serpent (O.'.S.'.)
 
-#Live Site
+## Live Site
 You can access the Order at http://www.orderoftheserpent.org/index.html
 
 ![Screenshots](./index.png)
 ![Screenshots](./forum.png)
 
-#Introduction
+## Introduction
 The Order's mission statement, which can be found in the statement.html, is as follows:
 
 The Order of the Serpent is a modern Left-Hand Path organization. We are dedicated to the accumulation and sharing of knowledge and ideas in an open setting, especially knowledge and ideas which are related to the Left-Hand Path.
@@ -20,9 +20,9 @@ The Order encourages all of those who follow the Left-Hand Path, and all those w
 The Path of Darkness leads to Enlightenment.
 Like the Ancient Serpent, so too may You Endure.
 
-#Use Case
+## Use Case
 Why is this app useful? Never before has the Left-Hand Path been publicly available for users at no cost. And there are no degrees of access to information. The Order is has moved up from #3 to #1 in SEO Google ranks in the States. 
 
-# Technical
+## Technical
 The app is built using SMF 2.0.15 and FreeBSD. Changes are also made with the MAMP stack before sFTPing it up to the remote site. The front-end is built using HTML5, CSS3, and JavaScript. Any other technical questions may be directed to TheDarkPath at our contact page, also found on the site.
 
