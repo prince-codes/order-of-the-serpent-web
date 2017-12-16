@@ -1,4 +1,4 @@
-# Order of the Serpent (O.'.S.'.)
+# Order of the Serpent - O.'.S.'.
 
 ## Live Site
 You can access the Order at http://www.orderoftheserpent.org/index.html
@@ -21,7 +21,7 @@ The Path of Darkness leads to Enlightenment.
 Like the Ancient Serpent, so too may You Endure.
 
 ## Use Case
-Why is this app useful? Never before has the Left-Hand Path been publicly available for users at no cost. And there are no degrees of access to information. The Order is has moved up from #3 to #1 in SEO Google ranks in the States. 
+Why is this app useful? Never before has the Left-Hand Path been publicly available for users at no cost. And there are no degrees of access to information. The Order has moved up from #3 to #1 in SEO Google ranks in select regions of the States. 
 
 ## Technical
 The app is built using SMF 2.0.15 and FreeBSD. Changes are also made with the MAMP stack before sFTPing it up to the remote site. The front-end is built using HTML5, CSS3, and JavaScript. Any other technical questions may be directed to TheDarkPath at our contact page, also found on the site.
