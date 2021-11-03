@@ -1,7 +1,8 @@
 # Order of the Serpent - O.'.S.'.
 
 ## Live Site
-You can access the Order at http://www.orderoftheserpent.org/index.html
+~~You can access the Order at http://www.orderoftheserpent.org/index.html~~
+The site has been deprecated since 2020
 
 ![Screenshots](./index.png)
 ![Screenshots](./forum.png)
